@@ -1,0 +1,36 @@
+@media screen and (max-width: 425px) {
+
+.buttons{
+    display: none;
+}
+}
+
+@media screen and (min-width: 426px) {
+
+    nav i.fas.fa-bars {
+        display: none
+    }
+
+    .innerText h1 {
+        font-size: 3.4em;
+
+ }
+
+ @media screen and (min-width: 769px) {
+
+    nav img {
+        display:none;
+    }
+
+    .profile img {
+        display: inline;
+
+    }
+
+    .innerText h1 {
+        font-size: 4.2em;
+
+    }
+
+
+ }

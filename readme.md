@@ -1,8 +1,8 @@
 # Project Overview
 
-**PROJECT NAME:** dfadfadfsdfadf
+**PROJECT NAME:** Will's Big Ol' Project
 
-**PROJECT AUTHOR:** lkjlkjljlkadfsd
+**PROJECT AUTHOR:** Will Truscott
 
 ## Project Schedule
 
@@ -26,7 +26,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+https://docs.google.com/spreadsheets/d/1HYRff33UVffJBaQj0WJQSCUqwA76QN1L7QkL_woi5fQ/edit#gid=0
 
 ## Portfolio I want to Emulate
 
@@ -34,9 +34,9 @@ Search and compare at least 3 profile web sites.  Record your findings in the ta
 
 Link To Site  | One Thing I'd Like To Incorporate | 
 | ------------- | ------------- |
-| [denisechandler.com](http://www.denisechandler.com/)| landing page animation
-|[jkeohan.com](http://jkeohan.com/) | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/) |  layout of the projects
+| [dbrand](https://dbrand.com/apple-iphone-cases)| Not a protfolio at all, but I'm pulling from this product page for my portfolio layout. |
+|[iuri.is](https://iuri.is/) | I think this portfolio has a lot of examples of what i'm trying to achieve with my white text with key words in each sections color "theme" |
+| [ejosue.com](https://ejosue.com/) |  I don't like most of this page, but if you scroll to his projects "Case Studies" you can see the hover effects that are similat to what I want to implement albeit I want to go from grayscale to color. |
 
 ---
 
@@ -44,8 +44,9 @@ Link To Site  | One Thing I'd Like To Incorporate |
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
+- [Mobile Display](https://i.imgur.com/NwjkLzF.jpg)
+- [Tablet Display](https://i.imgur.com/Y6DIEzr.jpg)
+- [Desktop Display](https://i.imgur.com/YizqlU1.jpg)
 
 Wireframing Resources:
 
@@ -55,7 +56,7 @@ Wireframing Resources:
 
 ## Time/Priority Matrix 
 
-[Link](https://res.cloudinary.com/jkeohan/image/upload/a_270/v1591621734/project1_matrix_ocy5gc_h1kg0m.jpg)
+[Time Priority Matrix](https://i.imgur.com/XN6XF09.jpg)
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
@@ -65,20 +66,30 @@ Now create a separate list starting with A and assign it one of the features.  C
 
 Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
+29 hours
+
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP (examples)
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- Project Deployment 
+- Hamburger 
+- Nav with Flexbox  
+- Creating Cards with hyperlink buttons
+- Working with API 
+- Responsive Mobile First Design
+- Implement Responsive Grid for cards
+- Social Media Icons
 
 #### PostMVP 
 
-- Anything else that is not MVP
+-  Project Grayscale to Color Hover Effect
+- Create Background Images
+- Integrate Background Images with an absolute position
+- Bootstrap on Main Page
+- Make own icon
 
 ## Functional Components
 
@@ -89,29 +100,40 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
+| Project Deployment | H | 2hr | hr |
 | Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
+| Nav with Flexbox | H | 2hr | hr |  
+| Creating Cards with hyperlink buttons| M | 2hr | hr|
+| Working with API | H | 4hrs|  hr | 
+| Responsive Mobile First Design| H | 3hrs|  hr | 
+| Implement Responsive Grid for cards| H | 3hr | hr | hr |
 | Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| Total | H | 18hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Hover | L | 3hr | -hr | hr |
-| Banner letters wiggle | L | 1hr | hr |
-| Interactive Banner | M | 4hr | hr |
-| Materialize | H | 4hr | -hr | hr |
-| Bootstrap | H | 4hr | hr |
-| Make own icon | L | 4hr | hr |
-| Total | H | 20hrs| hrs |
+| Project Grayscale to Color Hover Effect| M | 2hr | -hr | hr |
+| Create Background Images | H | 3hr | hr |
+| Integrate Background Images with an absolute position | H | 1hr | hr |
+| Bootstrap on Main Page | M | 4hr | hr |
+| Make own icon | L | 2hr | hr |
+| Total | H | 12hrs| hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
+
+ Fontawesome - I will be implementing some of their icons. The hamburger menu for sure.
+
+ Google Fonts - I will be incorperating external fonts in my project.
+
+ favicon.io - I may create a favicon for the tab bar that is the personal icon if I have time.
+
+ bootstrap - if time permits bootstrap is how I will line up the elements on my pages main section.
+
+ jQuery - this is how I wil move between the sections of my site. And how I will implement my api.
+
+
 
 ## Code Snippet
 

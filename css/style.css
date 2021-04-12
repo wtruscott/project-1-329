@@ -1,0 +1,44 @@
+body {
+    background-color: #333333;
+}
+
+img {
+    height: 55px;
+    width: 55px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+nav,i {
+    color: white;
+}
+
+nav,i.fab.a-rebel {
+    font-size: 3em;
+
+}
+
+ul {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    background-color: #dbdbdd
+}

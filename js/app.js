@@ -27,6 +27,15 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1HYRff33UVffJBaQj0WJQSCUqwA76
 // jQuery goes here!!!
 ////////////////////////
 
+$("i.fas.fa-bars").on("click", (event) => {
+    $(".title").toggle()
+    $(".subtitle").toggle()
+    $(".menu").toggle()
+})
+
+const $scorchedEarth = () => {
+    $(".container").empty()
+}
 
 
 

@@ -49,6 +49,26 @@ li {
     font-size: .8em;
 }
 
+li i.fab.fa-rebel {
+    display:none !important;
+
+}
+
+.menu {
+    display: none;
+    background-color: black;
+    
+}
+
+.menu ul {
+    display: block;
+    padding: 0px;
+}
+
+.menu li {
+    border: 1px solid #dbdbdd;
+}
+
 .title {
     background-color: #dbdbdd;
     display: grid;
@@ -80,3 +100,10 @@ h4 {
     background-color: black;
 }
 
+.mission {
+    text-align: center;
+}
+
+p {
+    color: white;
+}

@@ -13,23 +13,50 @@
 
     .innerText h1 {
         font-size: 3.4em;
+    }
+
+    .menu, .menu ul, .menu li {
+        display: none;
+    }
+
+    /* .title {
+        display: grid;
+    } 
+    
+    .innerText {
+        display: flex;
+    } 
+    
+    .innerText h1, h4 {
+        display: block;
+    } */
 
  }
 
  @media screen and (min-width: 769px) {
 
+    
     nav img {
         display:none;
     }
 
+
+    nav i.fab.fa-rebel {
+        display: none;
+    }
+
+    li i.fab.fa-rebel {
+        display:inline;
+    
+    }
+
     .profile img {
         display: inline;
-
+        border: 4px solid black;
     }
 
     .innerText h1 {
         font-size: 4.2em;
-
     }
 
 

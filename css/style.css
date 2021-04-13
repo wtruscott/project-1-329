@@ -1,9 +1,9 @@
 body {
     background-color: #333333;
-    margin: 0 auto;
 }
 
 nav img {
+    display: none;
     height: 55px;
     width: 55px;
     border: 2px solid white;
@@ -50,7 +50,7 @@ li {
 }
 
 li i.fab.fa-rebel {
-    display:none !important;
+    display:none;
 
 }
 
@@ -100,10 +100,68 @@ h4 {
     background-color: black;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto 25% 25%;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 3;
+}
+
+main img {
+    height: 125px;
+    width: 125px;
+    border: 2px solid purple;
+    border-radius: 50%;
+
+}
+
+.mission {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.elements {
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 2 / 3;
+}
+
+.element {
+    height: 30px;
+    width: 30px;
+    grid-row: 3/4;
+}
+
+#fire i {
+    color: red;
+    font-size: 4em;
+}
+
+#water i {
+    color: blue;
+    font-size: 4em;
+}
+
+#earth i {
+    color: green;
+    font-size: 4em;
+}
+
+#air i {
+    color: white;
+    font-size: 4em;
+}
+
 .mission {
     text-align: center;
 }
 
 p {
     color: white;
+    font-size: 1em;
 }

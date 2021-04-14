@@ -50,11 +50,11 @@
           <img src="https://i.imgur.com/idFvrgf.jpg">
           <div class="buttons">
             <ul>
-              <li>Home</li>
-              <li>About Me</li>
+              <li class="toHome">Home</li>
+              <li class="toAbout">About Me</li>
               <li><i class="fab fa-rebel"></i></li>
-              <li>Projects</li>
-              <li>Contact</li>
+              <li class='toProjects'>Projects</li>
+              <li class="toContact">Contact</li>
             </ul>
           </div>
           <i class="fab fa-rebel"></i>
@@ -62,10 +62,10 @@
         </nav>
         <div class="menu">
           <ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li class="toHome">Home</li>
+            <li class="toAbout">About Me</li>
+            <li class='toProjects'>Projects</li>
+            <li class="toContact">Contact</li>
           </ul>
         </div>
 
@@ -84,30 +84,39 @@
     </header>
     </div>
     <div class="container">
-      <main>
+      <main class="main">
         <div class="hello">
           <img src="https://i.imgur.com/idFvrgf.jpg">
         </div>
         <div class="mission">
           <p>Hello, I'm Will,</br>
-          here's some text</p>
+            here's some text</p>
         </div>
-        <div class="elements">
-          <span class="element" id="fire" >
+        <div class="element toHome" id="fire">
+          <span>
             <i class="fab fa-pagelines"></i>
+            <p>Home</p>
           </span>
-          <span class="element" id="water">
+        </div>
+        <div class="element toAbout" id="water">
+          <span>
             <i class="fab fa-pagelines"></i>
+            <p>About Me</p>
           </span>
-          <span class="element" id="earth">
+        </div>
+        <div class="element toProjects" id="earth">
+          <span>
             <i class="fab fa-pagelines"></i>
+            <p>Projects</p>
           </span> 
-          <span class="element" id="air">
+        </div>
+        <div class="element toContact" id="air">
+          <span>
             <i class="fab fa-pagelines"></i>
+            <p>Contact</p>
           </span>
-          </div>
-      </main>
+        </div>
+    </main>
     </div>
-  </body>
   </body>
 </html>

@@ -19,6 +19,14 @@
         display: none;
     }
 
+    #cardGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .card {
+        height: 150px;
+    } */
+
     /* .title {
         display: grid;
     } 
@@ -30,6 +38,14 @@
     .innerText h1, h4 {
         display: block;
     } */
+}
+
+
+@media screen and (min-width: 564px) {
+
+  
+
+
 
  }
 
@@ -57,6 +73,11 @@
 
     .innerText h1 {
         font-size: 4.2em;
+    }
+
+    #cardGrid {
+
+        grid-template-columns: 1fr 1fr 1fr;  
     }
 
 

@@ -21,7 +21,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1HYRff33UVffJBaQj0WJQSCUqwA76
         }
     })
     console.log(projects)
-})
+// })
 
 //////////////////////////
 // jQuery goes here!!!
@@ -34,10 +34,57 @@ $("i.fas.fa-bars").on("click", (event) => {
 })
 
 const $scorchedEarth = () => {
-    $(".container").empty()
+    $(".newPage").remove()
+}
+const $scorchedEarth2 = () => {
+    $(".main").css("display", "none")
+    $("#cardGrid").remove()
 }
 
+const $bringItBack = () => {
+    $(".main").css("display", "grid")
+    $(".newPage").remove()
+}
 
+// const $newCard = () => {
+//     const $card = ("<div>", {class: "card"})
+// }
+
+$(".toHome").on("click", (event) => {
+    $bringItBack()
+    $("nav i").css("color", "white")
+    $("nav img").css("display", "none")
+})
+
+$(".toAbout").on("click", (event) => {
+    $scorchedEarth2()
+    $("nav i").css("color", "#45aeff")
+})
+
+$(".toProjects").on("click", (event) => {
+    $scorchedEarth2()
+    const $newPage = $("<main>", {id: "cardGrid", "class": "newPage"})
+    $(".container").append($newPage)
+    $("h1").text("Projects")
+    $("h4").text("Here's what I've made.")
+    $("nav img").css("display", "inline")
+    $("nav i").css("color", "#7dd31f")
+
+    projects.forEach((item, index) => {
+    const $projectCard = $("<div>", {class: "card"})
+        $projectCard.html(`
+        <img src=${item.image}/>
+        `)
+        $newPage.append($projectCard)
+    })  
+})
+
+$(".toContact").on("click", (event) => {
+    $scorchedEarth2()
+    $("nav i").css("color", "#ffa502")
+})
+
+})
 
 //.catch in case of error
 .catch((error) => {

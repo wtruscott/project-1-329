@@ -7,6 +7,16 @@
 
 @media screen and (min-width: 426px) {
 
+    .movie {
+        height: 150px;
+        overflow: hidden;
+    }
+    
+    #background {
+        margin: -750px 0px 0px -200px;
+    }
+    
+    
     nav i.fas.fa-bars {
         display: none
     }
@@ -51,6 +61,15 @@
 
  @media screen and (min-width: 769px) {
 
+    
+    .movie {
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    #background {
+        margin: -700px 0px 0px 0px;
+    }
     
     nav img {
         display:none;

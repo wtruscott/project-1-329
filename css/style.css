@@ -6,6 +6,20 @@ body {
     margin: 0 auto;
 }
 
+.movie {
+    height: 100px;
+    overflow: hidden;
+}
+
+#background {
+    margin: -800px 0px 0px -300px;
+}
+
+.content {
+    /* position: absolute; */
+    /* z-index: 2; */
+}
+
 nav img {
     display: none;
     height: 55px;
@@ -27,7 +41,8 @@ nav i.fas.fa-bars {
     font-size: 3em;
 }
 
-nav i.fab.fa-rebel {
+nav i.far.fa-gem {
+    display: none;
     font-size: 3em;
     color: white;
 }
@@ -167,6 +182,7 @@ main img {
 .element {
     height: 100px;
     width: 100px;
+    text-align: center;
     justify-self: center;
 }
 
@@ -220,7 +236,7 @@ main img {
 }
 
 .element p {
-    /* writing-mode: vertical-rl; */
+    writing-mode: vertical-rl;
     color: inherit;
     text-orientation:upright;
     font-family: 'Train One', cursive;
@@ -253,9 +269,47 @@ p {
     width: 100%;
     border-radius: 0px;
     filter: grayscale(100);
+    position: relative;
 
 }
 
 .card img:hover {
     filter: none;
+}
+
+.card:hover .button1 {
+    display: inline;
+}
+
+.card:hover .button2 {
+    display: inline;
+}
+
+
+
+.button1 {
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    width:fit-content;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.button2 {
+    display: none;
+    background-color: rgba(0, 0, 0, .4);
+    width:fit-content;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 4px;
+}
+
+.button1 a, .button2 a {
+    text-decoration: none;
+    color: #60b900;
 }

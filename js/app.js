@@ -39,11 +39,14 @@ const $scorchedEarth = () => {
 const $scorchedEarth2 = () => {
     $(".main").css("display", "none")
     $("#cardGrid").remove()
+    $("nav img").css("display", "inline")
 }
 
 const $bringItBack = () => {
     $(".main").css("display", "grid")
     $(".newPage").remove()
+    $("h1").text("will.Truscott()")
+    $("h4").text("Developer")
 }
 
 // const $newCard = () => {
@@ -59,6 +62,8 @@ $(".toHome").on("click", (event) => {
 $(".toAbout").on("click", (event) => {
     $scorchedEarth2()
     $("nav i").css("color", "#45aeff")
+    $("h1").text("About Me")
+    $("h4").text("Who Am I?")
 })
 
 $(".toProjects").on("click", (event) => {
@@ -67,7 +72,6 @@ $(".toProjects").on("click", (event) => {
     $(".container").append($newPage)
     $("h1").text("Projects")
     $("h4").text("Here's what I've made.")
-    $("nav img").css("display", "inline")
     $("nav i").css("color", "#7dd31f")
 
     projects.forEach((item, index) => {
@@ -82,6 +86,8 @@ $(".toProjects").on("click", (event) => {
 $(".toContact").on("click", (event) => {
     $scorchedEarth2()
     $("nav i").css("color", "#ffa502")
+    $("h1").text("Contact")
+    $("h4").text("Let's work together")
 })
 
 })

@@ -1,6 +1,6 @@
 # Project Overview
 
-**PROJECT NAME:** Will's Big Ol' Project
+**PROJECT NAME:** Will's Portfolio Site
 
 **PROJECT AUTHOR:** Will Truscott
 
@@ -8,11 +8,11 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Timeline | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 4| MVP & Bug Fixes | Complete
+|Day 5| Final Touches | Complete
 |Day 6| Present | Incomplete
 
 
@@ -118,17 +118,45 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+```
+const $scorchedEarth2 = () => {
+    $(".main").css("display", "none")
+    $(".newPage").remove()
+    $("nav img").css("display", "inline")
+    $("nav i.far.fa-gem").css("display", "inline")
+}
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+This guy is why I can click on any link in the nav bar, nav bar drop down menu, or main page, and have the correct section load. I was constantly updating this and accounting for variables that might not get caught in a transition.
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+Issue: drop down menu would not dissapear if you changed the screen width with it open.
+
+Solution: added a rule to my media Query that gives the menu display:none at that size.
+
+Issue: Profile picture wouldn't load consistantly. 
+
+Solution: happened because image in my imgur account was private. I uploaded the photo to cloudinary. Now it works 100% of the time.
+
+Issue: Created a function that removed the main page without issue, but I was having issues that all subsequent elements created through DOM manipulation stayed on the page.
+
+Solution: created a similar function that would remove any div with the class of "newPage" I then made sure to give all my new main tags the class of newPage.
+
+Issue: Grid was working well on my Projects page, but it would warp my images to fit them, and if I set parameters that stopped the warping the page looked bad.
+
+Solution: because the idea was to have a uniform grid of square screenshots I retook my screenshots and uploaded square pictures. Sometimes editing the info before you use it is the easiest solution if possible.
+
+Issue: My link tags for github and live site were labeled correctly but they were coming up as undefined when i tried to click on them. This took some time to figure out. I knew the jQuery selectors are case sensitive, but I didn't realize when I name the keyword for the value I'm trying to pull off an API, I need to look at what I called it in my $Ajax array, it doesn't matter what it says on the spread sheet.
+
+Solution: Spreadsheet said gitURL and liveURl but $projects Array said giturl and liveurl. I switched my selectors accordingly.
+
+Issue: I was trying to make the video that is now above the header a background to everything below the nav. Videos are tricky to work with so the only way to implement my idea recquired absolute positions on the video and the "content" relative position on the body. when i tried to use absolute position on the "contents" I lost most of my grid and flexbox formatting.
+
+Solution: A happy accident, I liked the way the video looked above the nav so I stuck with it. As far as positions go the answer seems to be that implementing absolute positioning as far along as i was, while possible, creates more problems than it's really worth solving.
+
+Issue: When I tried to get the video scource to change when you move to a different section it would stay the same, even though inspector indicated that the HTML was updating correctly.
+
+Solution: videos have additional properties to account for. Alex helped me with this. I had to write in a little function in my app.js below where i altered the video scource to tell the DOM to load that new video.
+
+

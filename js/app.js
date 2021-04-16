@@ -39,7 +39,6 @@ const $scorchedEarth = () => {
 const $scorchedEarth2 = () => {
     $(".main").css("display", "none")
     $(".newPage").remove()
-    $("#cardGrid").remove()
     $("nav img").css("display", "inline")
     $("nav i.far.fa-gem").css("display", "inline")
 }

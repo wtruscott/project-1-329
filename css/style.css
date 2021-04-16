@@ -429,3 +429,16 @@ p {
 #contactGrid {
     border: 3px solid #ffa502;
 }
+
+footer {
+    margin-top: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer i {
+    color: white;
+    margin: 10px;
+    font-size: 2em;
+}

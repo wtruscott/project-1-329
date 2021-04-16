@@ -81,25 +81,25 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Deployment | H | 2hr | hr |
-| Hamburger | H | 1hr | hr |
-| Nav with Flexbox | H | 2hr | hr |  
-| Creating Cards with hyperlink buttons| M | 2hr | hr|
-| Working with API | H | 4hrs|  hr | 
-| Responsive Mobile First Design| H | 3hrs|  hr | 
-| Implement Responsive Grid for cards| H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 18hrs| hrs |
+| Project Deployment | H | 2hr | 2hr |
+| Hamburger | H | 1hr | 3 hr |
+| Nav with Flexbox | H | 2hr | 3hr |  
+| Creating Cards with hyperlink buttons| M | 2hr | 2hr|
+| Working with API | H | 4hrs|  6hr | 
+| Responsive Mobile First Design| H | 3hrs|  7hr | 
+| Implement Responsive Grid for cards| H | 3hr | 1hr |
+| Social Media Icons | L | 1hr |  1hr |
+| Total | H | 18hrs| 25 hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Project Grayscale to Color Hover Effect| M | 2hr | -hr | hr |
-| Create Background Images | H | 3hr | hr |
-| Integrate Background Images with an absolute position | H | 1hr | hr |
-| Bootstrap on Main Page | M | 4hr | hr |
-| Make own icon | L | 2hr | hr |
-| Total | H | 12hrs| hrs |
+| Project Grayscale to Color Hover Effect| M | 2hr | .1hr |
+| Create Background Images | H | 3hr | 4hr |
+| Integrate Background Images with an absolute position | H | 1hr | 1hr |
+| Bootstrap on Main Page | M | 4hr | NA |
+| Make own icon | L | 2hr | NA |
+| Total | H | 12hrs| 5.1 hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 

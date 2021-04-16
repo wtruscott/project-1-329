@@ -2,6 +2,7 @@
     border: 1px solid white;
 } */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
     background-color: black;
@@ -117,7 +118,7 @@ li i.fab.fa-rebel {
 
 h4 {
     text-align: center;
-    color: white;
+    color: #333333;
     background-color: #333333;
 }
 
@@ -294,11 +295,15 @@ p {
     display: inline;
 }
 
+.card:hover .blurb {
+    display: none;
+}
+
 
 
 .button1 {
     display: none;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: #00000088;
     width:fit-content;
     padding: 5px;
     position: absolute;
@@ -309,7 +314,7 @@ p {
 
 .button2 {
     display: none;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: #00000088;
     width:fit-content;
     padding: 5px;
     position: absolute;
@@ -320,7 +325,20 @@ p {
 
 .button1 a, .button2 a {
     text-decoration: none;
-    color: #60b900;
+    color: white;
+}
+
+.blurb {
+    position: absolute;
+    background-color: #00000088;
+    bottom: 0px;
+    width: 100%;
+}
+
+.blurb p{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1em;
 }
 
 #bioGrid {
@@ -338,11 +356,10 @@ p {
 .bio {
     display: flex;
     flex-direction:column;
-    height: 100px;
+    height: 100%;
     width: 100%;
     /* border: 6px solid #45aeff; */
     margin: 0;
-    
 }
 
 
@@ -377,7 +394,17 @@ p {
     font-size: 1.4em;
 }
 
-.bio i {
+.bio i.far.fa-hand-point-down {
     color: #45aeff;
-    font-size: 3em;
+    font-size: 4em;
+    text-align: center;
+}
+
+.bio i.far.fa-hand-point-left,
+.bio i.far.fa-hand-point-right {
+    display: none;
+    color: #45aeff;
+    font-size: 4em;
+    text-align: center;
+
 }

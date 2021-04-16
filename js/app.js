@@ -92,16 +92,19 @@ $(".toAbout").on("click", (event) => {
     $picture3.append($pic3)
     const $head1 = $("<h2>").text("Dreamer")
     const $text1 = $("<p>").text("I come from a background of acting and singing. My imagination and creativity served me well on stage and has proven a tremendous asset in life and at work since those days.")
-    const $point1 =$("<i>").addClass("far fa-hand-point-left")
-    $textBox1.append($head1, $text1, $point1)
+    const $point1 =$("<i>").addClass("far fa-hand-point-down")
+    const $pointy1 =$("<i>").addClass("far fa-hand-point-left")
+    $textBox1.append($head1, $text1, $point1, $pointy1)
     const $head2 = $("<h2>").text("Builder")
     const $text2 = $("<p>").text("I have been building things my whole life. What started as a passion for Lego bricks lead to over ten years of carpentry and  operating and repairing stage automation")
-    const $point2 =$("<i>").addClass("far fa-hand-point-right")
-    $textBox2.append($head2, $text2, $point2)
+    const $point2 =$("<i>").addClass("far fa-hand-point-down")
+    const $pointy2 =$("<i>").addClass("far fa-hand-point-right")
+    $textBox2.append($head2, $text2, $point2, $pointy2)
     const $head3 = $("<h2>").text("Teammate")
     const $text3 = $("<p>").text("I've spent six years on a four person technical team in international waters. I know that a team works best when everyone is contributing as much as they are able. I know that a team that can work well together can pull off far greater feats than any indiviidual member.")
-    const $point3 =$("<i>").addClass("far fa-hand-point-left")
-    $textBox3.append($head3, $text3, $point3)
+    const $point3 =$("<i>").addClass("far fa-hand-point-down")
+    const $pointy3 =$("<i>").addClass("far fa-hand-point-left")
+    $textBox3.append($head3, $text3, $point3, $pointy3)
 
 })
 
@@ -119,6 +122,7 @@ $(".toProjects").on("click", (event) => {
     const $projectCard = $("<div>", {class: "card"})
     const $gittyUp = $("<div>", {class: "button1"})
     const $liveItUp = $("<div>", {class: "button2"})
+    const $blurb = $("<div>", {class: "blurb"})
         $projectCard.html(`
         <img src=${item.image}/>
         `)
@@ -128,8 +132,12 @@ $(".toProjects").on("click", (event) => {
         $liveItUp.html(`
         <a href=${item.liveurl}>Live Site</a>
         `)
+        $blurb.html(`
+        <p>${item.description}</p>
+        `)
         $newPage.append($projectCard)
         $projectCard.append($gittyUp, $liveItUp)
+        $projectCard.append($blurb)
     })  
 })
 

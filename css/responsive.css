@@ -57,39 +57,8 @@
         display: block;
     } */
 
-    #bioGrid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
     
-    }
-
-    #picOne {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
     
-    #picThree {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-    .bio {
-
-        margin-bottom: 40px;
-   
-    }
-    
-    .pic {
-
-        margin-bottom: 40px;
-      
-    }
-    
-    .pic img {
-        
-    }
-    
-    .bio p {
-    }
 }
 
 
@@ -141,8 +110,61 @@
         grid-template-columns: 1fr 1fr 1fr;  
     }
 
+    .blurb p {
+        font-size: 2em;
+    }
+
     #bioGrid {
         max-width: 1000px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+    }
+
+    #picOne {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    #picThree {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .bio h2, .bio p, 
+    .bio i.far.fa-hand-point-left,
+    .bio i.far.fa-hand-point-right {
+        margin: 0;
+    }
+
+    .bio p {
+       
+
+    }
+
+    .bio {
+       height: 100%;
+       width: 100%;
+    }
+    
+    .pic {
+        justify-self: stretch;
+        align-self: center;
+      
+    }
+
+    .bio i.far.fa-hand-point-down {
+        display: none;
+    }
+
+    .bio i.far.fa-hand-point-left,
+    .bio i.far.fa-hand-point-right {
+        display: inline;
+
+    }
+    
+    .pic img {
+        
     }
 
 

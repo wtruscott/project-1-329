@@ -68,11 +68,19 @@ $(".toHome").on("click", (event) => {
     
 })
 
+$(".toSkills").on("click", (event) => {
+    $scorchedEarth2()
+    $("h1").text("Resume and Skills")
+    $("video source").attr("src", "https://res.cloudinary.com/dbmh779j0/video/upload/v1618503462/Burning_11_f7euin.webm")
+    $("video")[0].load()
+    const $newPage = $("<main>", {id: "skillsGrid", "class": "newPage"})
+    $(".container").append($newPage)
+})
+
 $(".toAbout").on("click", (event) => {
     $scorchedEarth2()
     // $("nav i").css("color", "#45aeff")
     $("h1").text("About Me")
-    $("h4").text("Who Am I?")
     $("video source").attr("src", "https://res.cloudinary.com/dbmh779j0/video/upload/v1618503464/Burning_10_bnsrfe.webm")
     $("video")[0].load()
     const $newPage = $("<main>", {id: "bioGrid", "class": "newPage"})
@@ -113,7 +121,6 @@ $(".toProjects").on("click", (event) => {
     const $newPage = $("<main>", {id: "cardGrid", "class": "newPage"})
     $(".container").append($newPage)
     $("h1").text("Projects")
-    $("h4").text("Here's what I've made.")
     // $("nav i").css("color", "#7dd31f")
     const $linkys = $("<div>", {class: "linkBox"})
     $("video source").attr("src", "https://res.cloudinary.com/dbmh779j0/video/upload/v1618502373/Burning_6_em9kmt.webm")
@@ -145,9 +152,10 @@ $(".toContact").on("click", (event) => {
     $scorchedEarth2()
     // $("nav i").css("color", "#ffa502")
     $("h1").text("Contact")
-    $("h4").text("Let's work together")
     $("video source").attr("src", "https://res.cloudinary.com/dbmh779j0/video/upload/v1618503467/Burning_9_x1g7ez.webm")
     $("video")[0].load()
+    const $newPage = $("<main>", {id: "contactGrid", "class": "newPage"})
+    $(".container").append($newPage)
 })
 
 })

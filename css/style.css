@@ -431,7 +431,7 @@ p {
 }
 
 #contactGrid {
-    border: 3px solid #ffa502;
+    padding-top: 100px;
 }
 
 footer {
@@ -445,4 +445,12 @@ footer i {
     color: white;
     margin: 10px;
     font-size: 2em;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid #ffa502;
+    background-color: white;
+    border-radius: 2px;
 }

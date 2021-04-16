@@ -155,6 +155,9 @@ $(".toContact").on("click", (event) => {
     $("video")[0].load()
     const $newPage = $("<main>", {id: "contactGrid", "class": "newPage"})
     $(".container").append($newPage)
+    const $contactForm = $("<form netlify>")
+    $contactForm.text("You're e-mail address here")
+    $newPage.append($contactForm)
 })
 
 })

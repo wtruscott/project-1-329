@@ -38,6 +38,7 @@ const $scorchedEarth = () => {
 }
 const $scorchedEarth2 = () => {
     $(".main").css("display", "none")
+    $(".newPage").remove()
     $("#cardGrid").remove()
     $("nav img").css("display", "inline")
     $("nav i.far.fa-gem").css("display", "inline")
@@ -74,6 +75,34 @@ $(".toAbout").on("click", (event) => {
     $("h4").text("Who Am I?")
     $("video source").attr("src", "https://res.cloudinary.com/dbmh779j0/video/upload/v1618503464/Burning_10_bnsrfe.webm")
     $("video")[0].load()
+    const $newPage = $("<main>", {id: "bioGrid", "class": "newPage"})
+    $(".container").append($newPage)
+    const $textBox1 = $("<div>", {id: "textOne", "class": "bio"})
+    const $picture1 = $("<div>", {id: "picOne", "class": "pic"})
+    const $textBox2 = $("<div>", {id: "textTwo", "class": "bio"})
+    const $picture2 = $("<div>", {id: "picTwo", "class": "pic"})
+    const $textBox3 = $("<div>", {id: "textThree", "class": "bio"})
+    const $picture3 = $("<div>", {id: "picThree", "class": "pic"})
+    $newPage.append($textBox1,$picture1,$textBox2,$picture2,$textBox3,$picture3)
+    const $pic1 = $("<img>").attr("src", "https://res.cloudinary.com/dbmh779j0/image/upload/v1618521825/E5CFABC6-4EC2-4F34-A9BB-6DAA0F2C2508_bmqdjd.jpg")
+    $picture1.append($pic1)
+    const $pic2 = $("<img>").attr("src", "https://res.cloudinary.com/dbmh779j0/image/upload/v1618521825/882C2852-9522-4A47-A97C-574CB36E1C45_far40p.jpg")
+    $picture2.append($pic2)
+    const $pic3 = $("<img>").attr("src", "https://res.cloudinary.com/dbmh779j0/image/upload/v1618521826/0099DE13-023F-4EE3-BA55-ECA0854A50E3_hhuitn.jpg")
+    $picture3.append($pic3)
+    const $head1 = $("<h2>").text("Dreamer")
+    const $text1 = $("<p>").text("I come from a background of acting and singing. My imagination and creativity served me well on stage and has proven a tremendous asset in life and at work since those days.")
+    const $point1 =$("<i>").addClass("far fa-hand-point-left")
+    $textBox1.append($head1, $text1, $point1)
+    const $head2 = $("<h2>").text("Builder")
+    const $text2 = $("<p>").text("I have been building things my whole life. What started as a passion for Lego bricks lead to over ten years of carpentry and  operating and repairing stage automation")
+    const $point2 =$("<i>").addClass("far fa-hand-point-right")
+    $textBox2.append($head2, $text2, $point2)
+    const $head3 = $("<h2>").text("Teammate")
+    const $text3 = $("<p>").text("I've spent six years on a four person technical team in international waters. I know that a team works best when everyone is contributing as much as they are able. I know that a team that can work well together can pull off far greater feats than any indiviidual member.")
+    const $point3 =$("<i>").addClass("far fa-hand-point-left")
+    $textBox3.append($head3, $text3, $point3)
+
 })
 
 $(".toProjects").on("click", (event) => {
@@ -94,10 +123,10 @@ $(".toProjects").on("click", (event) => {
         <img src=${item.image}/>
         `)
         $gittyUp.html(`
-        <a href=${item.gitURL}>GitHub</a>
+        <a href=${item.giturl}>GitHub</a>
         `)
         $liveItUp.html(`
-        <a href=${item.liveURL}>Live Site</a>
+        <a href=${item.liveurl}>Live Site</a>
         `)
         $newPage.append($projectCard)
         $projectCard.append($gittyUp, $liveItUp)

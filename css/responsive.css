@@ -15,6 +15,14 @@
     #background {
         margin: -750px 0px 0px -200px;
     }
+
+    .title {
+        display: grid;
+    }
+
+    .subtitle {
+        display: block;
+    }
     
     
     nav i.fas.fa-bars {
@@ -48,6 +56,40 @@
     .innerText h1, h4 {
         display: block;
     } */
+
+    #bioGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+    }
+
+    #picOne {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    #picThree {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .bio {
+
+        margin-bottom: 40px;
+   
+    }
+    
+    .pic {
+
+        margin-bottom: 40px;
+      
+    }
+    
+    .pic img {
+        
+    }
+    
+    .bio p {
+    }
 }
 
 
@@ -97,6 +139,10 @@
     #cardGrid {
 
         grid-template-columns: 1fr 1fr 1fr;  
+    }
+
+    #bioGrid {
+        max-width: 1000px;
     }
 
 

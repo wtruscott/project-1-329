@@ -254,7 +254,7 @@ main img {
 
 .mission p {
     /* font-family: 'Kaushan Script', cursive; */
-    font-family: fantasy;
+    /* font-family: fantasy; */
     line-height: 2em;
 }
 
@@ -263,7 +263,7 @@ main img {
     color: inherit;
     text-orientation:upright;
     /* font-family: 'Kaushan Script', cursive; */
-    font-family: fantasy;
+    /* font-family: fantasy; */
     font-size: 1.2em;
     margin: 0;
     /* background-color: #333333; */
@@ -275,7 +275,32 @@ p {
 }
 
 #skillsGrid {
+    padding: 30px;
+}
+
+#resume {
+    display: grid;
+    margin: 30px;
+}
+
+#resume img {
     border: 3px solid red;
+    justify-self: center;
+}
+
+#icons {
+    border: 3px solid red;
+    font-size: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat (1fr);
+    background-color: white;
+    padding: 30px;
+}
+
+#icons i {
+    padding: 20px;
+    justify-self: center;
 }
 
 #cardGrid {
@@ -431,7 +456,29 @@ p {
 }
 
 #contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-top: 100px;
+}
+
+#contactText {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #ffa502;
+    border-radius: 2px; 
+    color: white;
+    padding: 30px;
+}
+
+#contactText a{
+    color: white;
+    font-size: 2em;
+}
+
+#contactImg {
+    font-size: 10em;
+    color: #ffa502;
+    text-align: center;
 }
 
 footer {
@@ -454,3 +501,4 @@ form {
     background-color: white;
     border-radius: 2px;
 }
+

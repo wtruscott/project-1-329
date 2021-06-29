@@ -33,6 +33,10 @@ $("i.fas.fa-bars").on("click", (event) => {
     $(".menu").toggle()
 })
 
+const $resizeIframe = () => {
+    $("iframe").css("height", "iframe.contentWindow.document.body.scrollHeight + 'px'");
+  }
+
 const $scorchedEarth = () => {
     $(".newPage").remove()
 }
@@ -69,7 +73,7 @@ $(".toHome").on("click", (event) => {
 
 $(".toSkills").on("click", (event) => {
     $scorchedEarth2()
-    $("h1").text("Resume and Skills")
+    $("h1").text("Resume")
     $("video source").attr("src", "https://res.cloudinary.com/dbmh779j0/video/upload/v1618503462/Burning_11_f7euin.webm")
     $("video")[0].load()
     const $newPage = $("<main>", {id: "skillsGrid", "class": "newPage"})

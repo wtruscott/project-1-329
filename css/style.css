@@ -280,22 +280,29 @@ p {
 
 #resume {
     display: grid;
-    margin: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    margin-bottom: 40px;
+
 }
 
 #resume img {
     border: 3px solid red;
     justify-self: center;
+    height:100%;
+    width: 100%;
 }
 
 #icons {
     border: 3px solid red;
-    font-size: 5em;
+    font-size: 4em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat (1fr);
     background-color: white;
     padding: 30px;
+    justify-self: center;
 }
 
 #icons i {
@@ -457,7 +464,7 @@ p {
 
 #contactGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-top: 100px;
 }
 
@@ -470,15 +477,20 @@ p {
     padding: 30px;
 }
 
+#contactText h2{
+    font-size: 1em;
+}
+
 #contactText a{
     color: white;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 #contactImg {
-    font-size: 10em;
+    font-size: 5em;
     color: #ffa502;
     text-align: center;
+    padding: 30px;
 }
 
 footer {

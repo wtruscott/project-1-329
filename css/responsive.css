@@ -171,5 +171,22 @@
         
     }
 
+    #contactGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contactText h2, #contactText a {
+        font-size: 1.6em;
+    }
+
+    #contactImg {
+        font-size: 10em;
+    }
+
+    #icons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-size: 5em;
+    }
+
 
  }
